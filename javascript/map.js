@@ -2,7 +2,9 @@ const map = L.map("map").setView([-22.4084,  -44.2604], 13);
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
   maxZoom: 80,
-  attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+  attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+  dragging: !L.Browser.mobile,
+  tap: !L.Browser.mobile
 }).addTo(map);
 
 //Marker add
