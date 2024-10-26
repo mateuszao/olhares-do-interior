@@ -1,0 +1,61 @@
+.introducao-sobre {
+  background-color: #FFFCFA;
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 70vh;
+  align-content: center;
+  background-image: url('../../img/doc/mapa.svg');
+  background-size: cover; /* Faz a imagem cobrir todo o container */
+  background-position: center; /* Centraliza a imagem no container */
+  background-repeat: no-repeat; /* Evita que a imagem se repita */
+  
+}
+
+/* .introducao-sobre {
+  @media (max-height: 700px) {
+    margin-top: 80px;
+  }
+} */
+
+.frame-youtube iframe {
+  width: 560px;
+  height: 315px;
+
+  @media (max-width: 620px) {
+    width: 360px;
+    height: 315px;
+  }
+}
+
+.frame-youtube iframe {
+  @media (max-width: 420px) {
+    width: 260px;
+    height: 215px;
+  }
+}
+
+.sobre-o-projeto {
+  background-color: #FFFCFA;
+  padding: 32px 0px;
+}
+
+.sobre-o-projeto h1 { 
+  margin: 8px 0px 4px 0px;
+}
+
+.sobre-o-projeto div {
+  margin-bottom: 32px;
+}
+
+.sobre-o-projeto p {
+  padding: 8px 0px;
+  font-size: 16px;
+}
+
+.introducao h1 {
+  margin-bottom: 16px;
+}
+
+.introducao p {
+  margin-bottom: 20px;
+}

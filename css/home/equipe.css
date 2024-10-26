@@ -1,0 +1,76 @@
+.equipe {
+  width: 100%;
+  height: auto;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* 250px é o tamanho mínimo do card */
+  gap: 16px; /* Espaçamento entre os cards */
+  padding: 16px 0; /* Espaçamento interno */
+}
+
+@media (max-width: 388px) {
+  .card-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+.card {
+  background-color: #fcfcfc;
+  height: auto; 
+  /* padding: 16px; */
+  border-radius: 4px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden; /* Garante que nada vaze do card */
+}
+
+.card-image {
+  width: 100%;
+  height: 300px;
+  border-radius: 8px;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px 4px 0 0;
+  object-fit: cover; /* Garante que a imagem preencha o espaço da div */
+}
+
+.card-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-radius: 0 0 4px 4px;
+  padding: 16px 0;
+  /* background-color: #2A3688; */
+  /* border-top: 1px solid black; */
+}
+
+.card-content {
+  max-width: 150px;
+}
+
+.card-content h1 {
+  font-size: 1.5rem; /* Tamanho da fonte ajustável */
+  margin: 0;
+}
+
+.card-content h4 {
+  font-size: 1rem;
+  margin-top: 4px;
+}
+
+.card-social {
+  display: flex;
+  max-width: 32px;
+  justify-content: flex-end;
+}
+
+.card-social img + img {
+  margin-left: 8px; /* Espaçamento entre ícones sociais */
+}
