@@ -7,9 +7,38 @@
   margin-right: auto;
 }
 
-.container {
-  @media (max-height: 700px) {
-    max-width: 1280px;
+/* Breakpoints para diferentes tamanhos de tela */
+@media (max-width: 1440px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 720px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 100%; /* Ocupa toda a largura em telas muito pequenas */
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
@@ -99,16 +128,11 @@
 
 /* titulo internas */
 .titulo-bg {
-  padding-top: 128px;
+  padding-top: 32px;
   padding-bottom: 32px;
   background-color: var(--cor-11);
 }
 
-.titulo-bg {
-  @media (max-height: 700px) {
-    padding-top: 128px;
-  }
-}
 
 .titulo {
   background: url("../../img/dec/top-right.svg") no-repeat top right 20px;
@@ -119,19 +143,10 @@
 }
 
 @media (max-width: 800px) {
-  .titulo-bg {
-    padding-top: 162px;
-  }
 
   .titulo p {
     font-size: 1rem;
     text-transform: lowercase;
     font-weight: 400;
-  }
-}
-
-@media (max-width: 600px) {
-  .titulo-bg {
-    padding-top: 190px;
   }
 }

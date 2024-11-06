@@ -1,54 +1,15 @@
+/* Estilos para introdução */
 .introducao-bg {
   background-color: #2B3986;
-  border: saddlebrown 3px sol;
 }
 
 .introducao {
-  margin-top: 64px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 90vh;
   align-content: center;
   column-gap: 32px;
   background-color: #2B3986;
-}
-
-.introducao img {
-  width: 100%;
-  height: auto;
-  max-width: 100%; /* Garante que a imagem nunca ultrapasse o container */
-  object-fit: cover; /* Garante que a imagem preencha o espaço da div sem distorção */
-  overflow: hidden; /* Evita que o conteúdo transborde */
-}
-
-.tem-mobile {
-  display: none;
-}
-
-@media (max-height: 700px) {
-  .introducao {
-    margin-top: 96px;
-    height: 90vh;
-  }
-}
-
-#map {
-  height: 80vh;
-}
-
-
-/* .introducao img {
-  border: salmon solid 5px;
-} */
-
-.introducao img {
-  @media (max-height: 700px) {
-    max-width: 450px;
-    margin-left: 64px;
-    height: auto;
-    object-fit: cover;
-    border-radius: 4px;
-  }
 }
 
 .introducao h1 {
@@ -59,7 +20,52 @@
   margin-bottom: 20px;
 }
 
-@media (max-width: 425px) {
+.introducao img {
+  width: 100%;
+  height: auto;
+  max-width: 100%; /* Garante que a imagem nunca ultrapasse o container */
+  object-fit: cover; /* Preenche o espaço da div sem distorção */
+  overflow: hidden; /* Evita que o conteúdo transborde */
+}
+
+/* Estilos para exibição móvel */
+.tem-mobile {
+  display: none;
+}
+
+/* Estilos específicos para o mapa */
+#map {
+  height: 80vh;
+}
+
+/* Media queries para diferentes alturas de tela */
+@media (max-height: 700px) {
+  .introducao {
+    height: 90vh;
+  }
+
+  .introducao img {
+    max-width: 450px;
+    margin-left: 64px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+}
+
+/* Media queries para diferentes larguras de tela */
+@media (max-width: 800px) {
+  .introducao {
+    grid-template-columns: 1fr;
+    padding-top: 64px;
+    align-content: start;
+    gap: 32px;
+  }
+
+  .introducao h1 {
+    margin-bottom: 16px;
+  }
+
   .sem-mobile {
     display: none;
   }
@@ -68,23 +74,9 @@
     height: 40vh;
     display: grid;
     margin-bottom: 16px;
-
     background-image: url('../../img/doc/BIQUINHA2.png');
     background-size: cover; /* Faz a imagem cobrir todo o container */
     background-position: center; /* Centraliza a imagem no container */
-    background-repeat: no-repeat; /* Evita que a imagem se repita */
-    
-  }
-}
-
-@media (max-width: 800px) {
-  .introducao {
-    grid-template-columns: 1fr;
-    gap: 32px;
-    margin-top: 168px ;
-  }
-
-  .introducao h1 {
-    margin-bottom: 16px;
+    background-repeat: no-repeat; /* Evita repetição da imagem */
   }
 }

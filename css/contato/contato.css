@@ -22,7 +22,7 @@
 
 .contato-formulario {
   border-radius: 0 5px 5px 0;
-  background: var(--cor-0) url("../../img/dec/bottom-right.svg") no-repeat
+  background: var(--cor-0-1) url("../../img/dec/bottom-right.svg") no-repeat
     bottom 20px right 20px;
 }
 
@@ -48,7 +48,7 @@
 }
 
 .contato-meios a:hover {
-  color: var(--cor-0);
+  color: var(--cor-0-1);
 }
 
 .contato-meios a:first-child {
