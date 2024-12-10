@@ -5,7 +5,6 @@
   height: 70vh;
   align-content: center;
   justify-content: center;
-  border: solid saddlebrown 3px;
   background-image: url('../../img/doc/mapa.svg');
   background-size: cover; /* Faz a imagem cobrir todo o container */
   /* background-position: center; Centraliza a imagem no container */

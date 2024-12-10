@@ -3,8 +3,38 @@
   position: sticky;   
   top: 0; 
   width: 100%;       
-  height: 10vh;     
+  height: auto;     
   z-index: 10000;
+}
+
+.pre-header {
+  display: grid;
+  grid-column: 1/-1;
+  background-color: var(--cor-11);
+}
+
+.pre-header-conteudo {
+  display: flex;
+  padding: 0px 34px;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.pre-header-conteudo p {
+  font-size: 16px;
+  color: var(--cor-0);
+}
+
+.pre-header-img {
+  display: flex;
+  gap: 20px;
+}
+
+.pre-header-img img {
+  width: 24px;
+  height: 24px;
 }
 
 .header {
@@ -44,24 +74,73 @@
   width: 100%;
 }
 
+.hamburger {
+  display: none; /* Escondido por padrão no desktop */
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: var(--cor-0);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Area que transforma em x */
+.nav-active .hamburger span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.nav-active .hamburger span:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-active .hamburger span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
 @media (max-width: 800px) {
-  .header-bg{
-    height: auto;
-  }
+  .hamburger {
+    display: flex;
+    margin-left: auto
+  } 
+
   .header-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
-    height: auto;
+    background-color: var(--cor-12);
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 999;
   }
+
+  .nav-active .header-menu {
+    transform: translateY(0);
+  }
+
   .header-menu a {
-    background: var(--cor-11);
-    padding: 12px 16px;
+    font-size: 18px;
+    color: var(--cor-0);
+    text-decoration: none;
+    padding: 10px 20px;
     border-radius: 4px;
+    background-color: var(--cor-11);
   }
+
   .header-menu a:hover {
     background-color: var(--cor-10);
-  }
-  .header a:after {
-    display: none;
   }
 }
 

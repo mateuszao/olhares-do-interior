@@ -8,6 +8,7 @@
   <title>Interior - Olhares</title>
   <meta name="description" content="Documentário.">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
   <link rel="preload" href="./css/style.css" as="style">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -21,18 +22,55 @@
 </head>
 
 <body>
-  <header class="header-bg">
+ 
+  <!-- <header class="header-bg"> 
+    <div class="pre-header">
+      <div class="pre-header-conteudo">
+        <p>Conheça nossas redes sociais</p>
+        <div class="pre-header-img">
+          <img src="img/redes/youtube.svg" alt="Youtube-Social">
+          <img src="img/redes/facebook.svg" alt="Instagram-social">
+          <img src="img/redes/instagram.svg" alt="Instagram-social">
+        </div>
+      </div>
+    </div>
+
     <div class="header container">
       <a href="./">
         <img src="./img/interior.png" width="136" height="32" alt="Interior">
       </a>
-
+      
       <nav aria-label="primaria">
         <ul class="header-menu font-1-m cor-0">
           <li><a href="#Mapa">Mapa</a></li>
           <li><a href="sobre.html">Sobre</a></li>
           <li><a href="equipe.html">Equipe</a></li>
           <li><a href="documentario.html">Documentário </a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header> -->
+
+  <header class="header-bg">
+
+    <div class="header container">
+      <a href="./">
+        <img src="./img/interior.png" width="136" height="32" alt="Interior">
+      </a>
+  
+      <button class="hamburger" aria-label="Abrir Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+  
+      <nav aria-label="Menu Primário">
+        <ul class="header-menu font-1-m cor-0">
+          <li><a href="#Mapa">Mapa</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="equipe.html">Equipe</a></li>
+          <li><a href="documentario.html">Documentário</a></li>
           <li><a href="contato.html">Contato</a></li>
         </ul>
       </nav>
@@ -67,25 +105,12 @@
         <div class="contato">
           <section class="contato-dados" aria-label="Endereço">
             <div class="contato-endereco font-2-s cor-4">
-              <p>Rua Ali Perto, 35</p>
-              <p>Rio de Janeiro - RJ</p>
-              <p>Brasil - Terra - Vita Láctea</p>
+              <p class="font-1-m-b">Como contar sua história?</p>
+              <p>Compartilhe conosco um pedaço especial da sua vida. Preencha seu nome, e-mail e telefone, e nos conte sua história com o máximo de detalhes possível. Não se esqueça de mencionar a rua ou o bairro da cidade de Quatis, para que possamos situar melhor o seu relato no mapa das memórias afetivas.</p>
             </div>
-            <address class="contato-meios font-2-s cor-4">
-              <a href="mailto:contato@Interior.com">contato@Interior.com</a>
-              <a href="mailto:assistencia@Interior.com">assistencia@Interior.com</a>
-              <a href="tel:+552199999999">+55 21 9999-9999</a>
-            </address>
-            <div class="contato-redes">
-              <a href="./">
-                <img src="./img/redes/instagram-p.svg" alt="Instagram">
-              </a>
-              <a href="./">
-                <img src="./img/redes/facebook-p.svg" alt="Facebook">
-              </a>
-              <a href="./">
-                <img src="./img/redes/youtube-p.svg" alt="Youtube">
-              </a>
+            <div class="contato-endereco font-2-s cor-4">
+              <p class="font-1-m-b">O que queremos saber?</p>
+              <p>Tem uma história que aquece o coração quando pensa em Quatis? Pode ser um momento de carinho, uma lembrança especial com seus filhos, netos ou mesmo um grande amor pela cidade. Queremos ouvir e compartilhar esse pedacinho único da sua história com todos os que amam Quatis.</p>
             </div>
           </section>
           <section class="contato-formulario" aria-label="Formulário">
@@ -99,12 +124,16 @@
                 <input type="text" id="telefone" name="telefone" placeholder="(21) 9999-9999">
               </div>
               <div class="col-2">
+                <label for="email">Localização</label>
+                <input type="email" id="email" name="email" placeholder="Bairro ou Rua de Quatis">
+              </div>
+              <div class="col-2">
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" placeholder="contato@email.com">
               </div>
               <div class="col-2">
                 <label for="mensagem">História</label>
-                <textarea rows="5" id="mensagem" name="mensagem" placeholder="O que você precisa?"></textarea>
+                <textarea rows="5" id="mensagem" name="mensagem" placeholder="Conte sua História"></textarea>
               </div>
               <button class="botao col-2">Enviar História</button>
             </form>
@@ -166,6 +195,16 @@
       </div>
     </div>
   </footer>
+  <div class="pre-header">
+    <div class="pre-header-conteudo">
+      <p>Conheça nossas redes sociais</p>
+      <div class="pre-header-img">
+        <img src="img/redes/youtube.svg" alt="Youtube-Social">
+        <img src="img/redes/facebook.svg" alt="Facebook-Social">
+        <img src="img/redes/instagram.svg" alt="Instagram-Social">
+      </div>
+    </div>
+  </div>
 </body>
 
 <script src="javascript/map.js"></script>

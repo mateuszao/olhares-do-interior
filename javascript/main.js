@@ -1,9 +1,7 @@
-const hamburger = document.querySelector('.hamburger');
-const header = document.querySelector('.header-bg');
+import menuMobile from './modules/menuMobile.js';
 
-hamburger.addEventListener('click', () => {
-  header.classList.toggle('nav-active');
-});
+menuMobile();
+
 
 const map = L.map("map").setView([-22.4084,  -44.2604], 13);
 
@@ -25,4 +23,3 @@ var marker = L.marker([-22.1078,  -44.1078])
   '<h1>Um titulo para o map</h1><p>Texto texto texto texto</p> <iframe width="300" height="300" src="https://www.youtube.com/embed/fM9wiB7DR_k?si=PG0haDEaNVFCtSFd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
 )
 .addTo(map);
-
