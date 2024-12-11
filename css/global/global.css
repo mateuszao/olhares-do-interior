@@ -45,7 +45,7 @@ img[src$=".jpg"] {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
-  z-index: 5;
+  z-index: 10010;
 }
 
 #modal {
@@ -54,11 +54,11 @@ img[src$=".jpg"] {
   top: 50%;
   transform: translate(-50%, -50%);
   width: 500px;
-  max-width: 90%;
+  max-width: 80%;
   background-color: #fff;
   padding: 1.2rem;
   border-radius: 0.5rem;
-  z-index: 10;
+  z-index: 10011;
 }
 
 #fade,
