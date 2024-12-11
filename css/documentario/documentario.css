@@ -29,7 +29,8 @@
 
 
 .documentario-bg {
-  background: linear-gradient(to right, var(--cor-0) 30%, var(--cor-11) 0%);
+  /* background: linear-gradient(to right, var(--cor-0) 30%, var(--cor-11) 0%); */
+  background: var(--cor-11);
 }
 
 .documentario-bg-1 {

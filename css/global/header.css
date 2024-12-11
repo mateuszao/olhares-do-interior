@@ -93,7 +93,7 @@
 
 /* Area que transforma em x */
 .nav-active .hamburger span:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
+  transform: rotate(44deg) translate(6px, 5px);
 }
 
 .nav-active .hamburger span:nth-child(2) {
@@ -101,7 +101,7 @@
 }
 
 .nav-active .hamburger span:nth-child(3) {
-  transform: rotate(-45deg) translate(5px, -5px);
+  transform: rotate(-44deg) translate(6px, -5px);
 }
 
 @media (max-width: 800px) {
@@ -141,6 +141,10 @@
 
   .header-menu a:hover {
     background-color: var(--cor-10);
+  }
+  
+  .header-menu a:hover:after {
+    width: 60%;
   }
 }
 
