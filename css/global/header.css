@@ -64,10 +64,14 @@
   display: block;
   height: 2px;
   width: 0px;
-  background: var(--cor-0);
+  background: var(--cor-p2);
   margin-top: 4px;
   transition: 0.3s;
   position: absolute;
+}
+
+.header-menu a:hover {
+  color: var(--cor-p2);
 }
 
 .header-menu a:hover:after {

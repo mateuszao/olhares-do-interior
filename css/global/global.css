@@ -4,6 +4,7 @@ body {
   margin: 0px;
   font-family: "B612", sans-serif, Helvetica, sans-serif;
   color: #111111;
+  background: var(--cor-0);
 }
 
 h1,

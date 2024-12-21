@@ -1,18 +1,22 @@
 /* Estilos para introdução */
 .introducao-bg {
-  background-color: #2B3986;
+  background-image: url('../../img/doc/MIAU.png');
+  background-size: cover; /* Faz a imagem cobrir todo o container */
+  background-position: center; /*  Centraliza a imagem no container */
+  background-repeat: no-repeat; /* Evita que a imagem se repita */
 }
 
 .introducao {
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 90vh;
-  align-content: center;
-  column-gap: 32px;
-  background-color: #2B3986;
+  align-content: start;
+  column-gap: 8px;
+  /* background-color: #2B3986; */
 }
 
 .introducao h1 {
+  margin-top: 112px;
   margin-bottom: 16px;
 }
 
@@ -63,6 +67,11 @@
   }
 
   .introducao h1 {
+    margin-top: 0px;
+    margin-bottom: 16px;
+  }
+
+  .introducao h1 {
     margin-bottom: 16px;
   }
 
@@ -79,4 +88,10 @@
     background-position: center; /* Centraliza a imagem no container */
     background-repeat: no-repeat; /* Evita repetição da imagem */
   }
+
+  .introducao-bg {
+    background-color: #2B3986;
+    background-image: none;
+  }
+  
 }

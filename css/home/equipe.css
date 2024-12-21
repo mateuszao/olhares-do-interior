@@ -17,11 +17,10 @@
 }
 
 .card {
-  background-color: #fcfcfc;
+  background-color: var(--cor-0);
   height: auto; 
   /* padding: 16px; */
   border-radius: 4px;
-  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -32,13 +31,37 @@
   width: 100%;
   height: 300px;
   border-radius: 8px;
+  position: relative;
+  width: 100%; /* Ajuste ao tamanho desejado */
+  overflow: hidden; /* Evita problemas com imagens fora da borda */
 }
 
 .card-image img {
   width: 100%;
-  height: 100%;
-  border-radius: 4px 4px 0 0;
-  object-fit: cover; /* Garante que a imagem preencha o espaço da div */
+  height: 300px;
+  object-fit: cover; 
+  transition: opacity 0.5s ease; /* Animação suave para a troca */
+}
+
+.card-image img.primary {
+  position: relative;
+  z-index: 1; /* Define a imagem base */
+}
+
+.card-image img.secondary {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2; /* Imagem que será exibida no hover */
+  opacity: 0; /* Oculta por padrão */
+}
+
+.card-image:hover img.primary {
+  opacity: 0; /* Esconde a imagem principal no hover */
+}
+
+.card-image:hover img.secondary {
+  opacity: 1; /* Mostra a imagem secundária no hover */
 }
 
 .card-flex {
@@ -46,13 +69,11 @@
   justify-content: space-between;
   align-items: flex-start;
   border-radius: 0 0 4px 4px;
-  padding: 16px 0;
-  /* background-color: #2A3688; */
-  /* border-top: 1px solid black; */
+  padding: 8px 0;
 }
 
 .card-content {
-  max-width: 150px;
+  max-width: 250px;
 }
 
 .card-content h1 {
@@ -66,7 +87,7 @@
 }
 
 .card-social {
-  display: flex;
+    display: flex;
   max-width: 32px;
   justify-content: flex-end;
 }
