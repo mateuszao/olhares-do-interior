@@ -82,6 +82,11 @@ img[src$=".jpg"] {
   margin-bottom: 1rem;
 }
 
+.modal-body p:last-of-type {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 1rem; /* Opcional: para espaçamento extra */
+}
+
 #modal.hide,
 #fade.hide {
   opacity: 0;
@@ -90,4 +95,32 @@ img[src$=".jpg"] {
 
 #modal.hide {
   top: 0;
+}
+
+.close {
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #000;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+}
+
+.close i {
+  color: var(--cor-11);
+}
+
+.image-container {
+  display: flex;
+  justify-content: flex-start; /* Alinha as imagens à esquerda */
+  gap: 8px; /* Espaçamento entre as imagens */
+}
+
+.modal-body img {
+  max-width: 32px;
+  margin-bottom: 1rem;
+  height: auto; /* Mantém a proporção da imagem */
 }

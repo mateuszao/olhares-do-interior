@@ -87,7 +87,7 @@
 }
 
 .card-social {
-    display: flex;
+  display: flex;
   max-width: 32px;
   justify-content: flex-end;
 }

@@ -10,6 +10,8 @@
 
   <link rel="preload" href="./css/style.css" as="style">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
 </head>
 
 <body id="Equipe">
@@ -59,11 +61,38 @@
             <h1 class="font-1-xxl cor-12">Mateus Araujo</h1>
             <h4 class="font-2-l-b cor-12">Designer engineer</h4>
           </div>
-          <!-- <div class="card-social">
-            <img src="img/doc/icon/icon-facebook.svg" alt="Facebook">
-            <img src="img/doc/icon/icon-insta.svg" alt="Instagram">
-            <img src="img/doc/icon/icon-linkedin.svg" alt="Linkedin">
-          </div> -->
+         
+          <!-- Modal -->
+          <div id="fade" class="hide"></div>
+          <div id="modal" class="hide">
+            <div class="modal-header">
+              <h2 id="modal-titulo">Este é o Modal</h2>
+              <a id="close-modal" class="close" aria-label="Fechar">
+                <i class="fa fa fa-times"></i>
+              </a>
+          </div>
+            <div class="modal-body">
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, quam?
+                Quas accusantium id cupiditate iste veritatis repudiandae odio dolore
+                voluptas. Eum, deserunt quod. Sit similique laudantium assumenda
+                repellat vel necessitatibus.
+              </p>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius alias
+                voluptate doloremque, totam inventore autem quis non error! Earum
+                ullam fuga, officiis voluptates pariatur unde et adipisci ducimus non
+                obcaecati.
+              </p>
+              <div class="image-container">
+                <img src="img/doc/icon/icon-facebook.svg" alt="Facebook">
+                <img src="img/doc/icon/icon-insta.svg" alt="Instagram">
+                <img src="img/doc/icon/icon-linkedin.svg" alt="Linkedin">
+              </div>          
+            </div>
+          </div>  
+
+          <!-- FIM Modal -->
         </div>
       </div>
       <div class="card">
@@ -143,33 +172,7 @@
   </div>
 
 
-    <!-- Modal -->
-    <div id="fade" class="hide"></div>
-    <div id="modal" class="hide">
-      <div class="modal-header">
-          <h2>Este é o Modal</h2>
-      </div>
-      <div class="modal-body">
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, quam?
-          Quas accusantium id cupiditate iste veritatis repudiandae odio dolore
-          voluptas. Eum, deserunt quod. Sit similique laudantium assumenda
-          repellat vel necessitatibus.
-        </p>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius alias
-          voluptate doloremque, totam inventore autem quis non error! Earum
-          ullam fuga, officiis voluptates pariatur unde et adipisci ducimus non
-          obcaecati.
-        </p>
-        <div class="card-social">
-          <img src="img/doc/icon/icon-facebook.svg" alt="Facebook">
-          <img src="img/doc/icon/icon-insta.svg" alt="Instagram">
-          <img src="img/doc/icon/icon-linkedin.svg" alt="Linkedin">
-        </div>
-        <button class="botao" id="close-modal">Fechar</button>
-      </div>
-    </div>  
+
 
 
   <footer class="footer-bg">
