@@ -19,7 +19,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 //Pega o json
-fetch('../historias.json')
+fetch('https://mateuszao.github.io/olhares-do-interior/historias.json')
   .then(response => response.json())
   .then(dados => {
     dados.forEach(item => {
