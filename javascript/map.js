@@ -20,17 +20,18 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 //Pega o json
 fetch('https://mateuszao.github.io/olhares-do-interior/historias.json')
+//Local fetch('../historias.json')
   .then(response => response.json())
   .then(dados => {
     dados.forEach(item => {
       const marcador = L.marker([item.latitude, item.longitude], { icon: meuIcone }).addTo(map);
       marcador.on('click', function() {
         const conteudo = `
-        <p><strong>Nome do Usuário:</strong> ${item.nomeUsuario}</p>
+        <img src="${item.imagemUrl}" alt="${item.titulo}" style="display:flex; width:100%; max-width:500px; height:250px; object-fit: cover;">
+        <p><strong>Nome:</strong> ${item.nomeUsuario}</p>
         <p><strong>Endereço:</strong> ${item.endereco}</p>
-        <p><strong>Mensagem:</strong> ${item.mensagem}</p>
-        <p><strong>Mensagem:</strong> ${item.mensagem}</p>
-        <img src="${item.imagemUrl}" alt="${item.titulo}" style="width:100%;max-width:300px;height:auto;">`;
+        <p><strong>História:</strong> ${item.mensagem}</p>
+        `;
         mostrarModal(item.titulo, conteudo);
       });
     });
