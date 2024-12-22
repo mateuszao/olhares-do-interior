@@ -60,6 +60,7 @@ img[src$=".jpg"] {
   padding: 1.2rem;
   border-radius: 0.5rem;
   z-index: 10011;
+  font-family: "B612", sans-serif, Helvetica, sans-serif;
 }
 
 #fade,
