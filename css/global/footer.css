@@ -38,7 +38,7 @@
 }
 
 .logos-col div {
-  max-width: 300px;
+  max-width: 200px;
   /* border: sandybrown solid 4px; */
 }
 
@@ -80,18 +80,18 @@
 @media (max-width: 600px) {
   .footer {
     grid-template-columns: 1fr;
-    gap: 60px;
+    gap: 32px;
   }
 
   .logos-col { 
-    padding-top: 32px;
+    padding-top: 0px;
     display: flex;
-    justify-content: space-between;
-    gap: 16px;
+    width: 100%;
+    gap: 32px;
     flex-direction: column;
   }
 
   .logos-col div {
-    max-width: 200px;
+    max-width: 150px;
   }
 }
