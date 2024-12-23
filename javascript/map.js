@@ -1,5 +1,5 @@
 var meuIcone = L.icon({
-  iconUrl: '../img/doc/map/Map-Icon.png', // Substitua pelo caminho real do seu arquivo SVG
+  iconUrl: 'https://mateuszao.github.io/olhares-do-interior/img/doc/map/Map-Icon.png', // Substitua pelo caminho real do seu arquivo SVG
   iconSize: [48, 48], // Ajuste o tamanho conforme necessário
   iconAnchor: [22, 94], // Ponto do ícone que estará ancorado na posição do marcador
   popupAnchor: [-3, -76] // Ponto de onde o popup abrirá em relação ao iconAnchor
