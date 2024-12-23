@@ -55,6 +55,12 @@
   font: 500 2rem/1.25 "B612", sans-serif; /* Peso: 500, Tamanho: 32px, Altura da linha: 1.25 */
 }
 
+/* Fonte semi gigante (XXL) - Usada para destaques importantes */
+.font-1-1-xxl {
+  font: 600 2.5rem/1.125 "B612", sans-serif; /* Peso: 600, Tamanho: 48px, Altura da linha: 1.125 */
+}
+
+
 /* Fonte gigante (XXL) - Usada para destaques importantes */
 .font-1-xxl {
   font: 600 3rem/1.125 "B612", sans-serif; /* Peso: 600, Tamanho: 48px, Altura da linha: 1.125 */
