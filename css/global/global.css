@@ -108,10 +108,11 @@ img[src$=".jpg"] {
   margin-bottom: 4px;
 }
 
-.modal-body {
+.modal-body-history {
   overflow: auto;
   height: 70vh;
 }
+
 
 .modal-body p:last-of-type {
   border-bottom: 1px solid #ccc;
