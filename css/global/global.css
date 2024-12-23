@@ -58,6 +58,7 @@ img[src$=".jpg"] {
   scrollbar-color: var(--cor-10); /* Thumb e trilho */
 }
 
+/* Inicio Modal Principal */
 #fade {
   position: fixed;
   top: 0;
@@ -110,7 +111,8 @@ img[src$=".jpg"] {
 
 .modal-body-history {
   overflow: auto;
-  height: 70vh;
+  height: auto;
+  max-height: 70vh;
 }
 
 
@@ -155,4 +157,50 @@ img[src$=".jpg"] {
   max-width: 32px;
   margin-bottom: 1rem;
   height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Fim Modal Principal */
+
+
+/* Inicio Modal Squad */
+.fadeSquad {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 10010;
+}
+
+.modalSquad {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  max-width: 80%;
+  background-color: var(--cor-0-1);
+  padding: 1.2rem;
+  border-radius: 0.5rem;
+  z-index: 10011;
+  font-family: "B612", sans-serif, Helvetica, sans-serif;
+  color: var(--cor-10);
+}
+
+.fadeSquad,
+.modalSquad {
+  transition: 0.5s;
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modalSquad.hide,
+.fadeSquad.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modalSquad.hide {
+  top: 0;
 }

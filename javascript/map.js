@@ -7,7 +7,7 @@ var meuIcone = L.icon({
 
 const map = L.map('map', {
   center: [-22.4084, -44.2604],
-  zoom: 13,
+  zoom: 15,
   gestureHandling: true
 });
 
