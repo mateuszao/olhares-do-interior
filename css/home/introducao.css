@@ -61,9 +61,10 @@
 @media (max-width: 800px) {
   .introducao {
     grid-template-columns: 1fr;
-    padding-top: 64px;
+    padding-top: 72px;
     align-content: start;
     gap: 32px;
+    height: 100vh;
   }
 
   .introducao h1 {
