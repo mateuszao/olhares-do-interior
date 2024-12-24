@@ -9,7 +9,7 @@
 .introducao {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 90vh;
+  height: 75vh;
   align-content: start;
   column-gap: 8px;
   /* background-color: #2B3986; */

@@ -6,7 +6,7 @@
 
 .form label {
   display: block;
-  font: 400 1rem/1.5 "Poppins", sans-serif;
+  font: 400 1rem/1.5 "B612", sans-serif, Helvetica, sans-serif;
   margin-bottom: 4px;
 }
 
@@ -17,13 +17,31 @@
 .form input[type="text"],
 .form input[type="email"],
 .form textarea {
-  font: 400 1rem/1.5 "Roboto", sans-serif;
+  font: 400 1rem/1.5 "B612", sans-serif, Helvetica, sans-serif;
   background: var(--cor-1);
   border: 1px solid var(--cor-2);
   padding: 12px;
   border-radius: 4px;
   width: 100%;
   box-sizing: border-box;
+}
+
+.form input[type="file"] {
+  font: 400 1rem/1.5 "B612", sans-serif, Helvetica, sans-serif;
+  background: var(--cor-1);
+  border: 1px solid var(--cor-2);
+  padding: 8px 12px; /* Ajuste o padding para melhorar a aparência */
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.form input[type="file"]:focus {
+  outline: none;
+  border-color: var(--cor-p1);
+  background: var(--cor-0);
+  box-shadow: 0 0 0 2px #fea;
 }
 
 .form input[type="text"]:focus,

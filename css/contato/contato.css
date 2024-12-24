@@ -37,7 +37,9 @@
 }
 
 .contato-endereco p {
+  margin-top: 4px;
   margin-bottom: 8px;
+  font-size: 15px;
 }
 
 .contato-meios a {

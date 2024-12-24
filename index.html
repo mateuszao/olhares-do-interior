@@ -6,8 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Favicon em formato ICO -->
   <link rel="icon" type="image/x-icon" href="img/doc/favico/Map-Icon.ico">
-  <title>Olhares do interior</title>
-  <meta name="description" content="Documentário.">
+
+  <!-- Favicon padrão -->
+  <link rel="icon" href="img/doc/favico/Map-Icon.ico" type="image/x-icon">
+
+  <!-- Favicon em formato PNG -->
+  <link rel="icon" type="image/png" sizes="32x32" href="img/doc/favico/Map-Icon.png">
+
+  <!-- Apple Touch Icon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="img/doc/favico/Map-Icon-96x96.png">
+
+  <title>Olhares do Interior</title>
+  <meta name="description" content="O documentário Olhares do Interior é um mapa afetivo de Quatis/RJ">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
   <link rel="preload" href="./css/style.css" as="style">
@@ -70,7 +80,7 @@
   
       <nav aria-label="Menu Primário">
         <ul class="header-menu font-1-m cor-0">
-          <li><a href="#Mapa">Mapa</a></li>
+          <li><a href="#map">Mapa</a></li>
           <li><a href="sobre.html">Sobre</a></li>
           <li><a href="equipe.html">Equipe</a></li>
           <li><a href="documentario.html">Documentário</a></li>
@@ -87,12 +97,12 @@
       </picture>
  
       <div class="introducao-conteudo">
-        <h1 class="font-1-xxl cor-0">CIDADES SÃO FEITAS DE HISTÓRIAS<span class="cor-p2">.</span></h1>
+        <h1 class="font-1-xxl cor-0">CIDADES SÃO FEITAS DE HISTÓRIAS</h1>
         <div class="tem-mobile">
           <!-- <img src="./img/doc/BIQUINHA2.png" alt="Leão que solta aguá pela boca."> -->
         </div>
         <p class="font-2-l cor-0">Conheça Quatis através dos olhos, bocas, passos, construções, encontros e amores de quem aqui vive e viveu.</p>
-        <a class="botao" href="#mapa">Acessar o mapa</a>
+        <a class="botao" href="#map">Acessar o mapa</a>
       </div>
     </div>
   </main>
@@ -115,16 +125,17 @@
   <main>
     <div class="titulo-bg">
       <div class="titulo container">
-        <h1 class="font-1-xxl cor-0">Conte sua história<span class="cor-p2">.</span></h1>
+        <h1 class="font-1-xxl cor-0">Conte sua história</h1>
         <div class="contato">
           <section class="contato-dados" aria-label="Endereço">
             <div class="contato-endereco font-2-s cor-4">
-              <p class="font-1-m-b">Como contar sua história?</p>
+              <h1 class="font-1-m-b">Como contar sua história?</h1>
               <p>Divida conosco um momento especial da sua vida! Preencha seu nome, e-mail e telefone e conte sua história com o máximo de detalhes. Não se esqueça de mencionar a rua ou o bairro de Quatis, para que possamos localizar melhor seu relato no mapa das memórias afetivas.</p>
             </div>
             <div class="contato-endereco font-2-s cor-4">
-              <p class="font-1-m-b">O que buscamos?</p>
-              <p>Você tem uma lembrança que aquece o coração quando pensa em Quatis? Pode ser um gesto de carinho, uma experiência marcante com sua família, ou até mesmo um grande amor pela cidade.
+              <h1 class="font-1-m-b">O que buscamos?</h1>
+              <p>Você tem uma lembrança que aquece o coração quando pensa em Quatis? Pode ser um gesto de carinho, uma experiência marcante com sua família, ou até mesmo um grande amor pela cidade. 
+                <br>
                 <br>
                 Queremos conhecer e compartilhar esse pedacinho único da sua história com todos que amam Quatis.</p>
             </div>
@@ -154,6 +165,10 @@
               <div class="col-2">
                 <label for="mensagem">História</label>
                 <textarea rows="5" id="mensagem" name="mensagem" placeholder="Conte sua História"></textarea>
+              </div>
+              <div class="col-2">
+                <label for="midias">Mídia</label>
+                <input type="file" id="midias" name="midias" accept="image/*" multiple>
               </div>
               <button class="botao col-2">Enviar História</button>
             </form>
@@ -189,17 +204,16 @@
       </div>
       <div class="footer-logos">
         <div class="logos-col">
-          <div>
+          <div class="col-apoio">
             <h3 class="font-2-s cor-0">Apoio:</h3>
-            <img src="./img/institucional/governo.svg" alt="Interior">
-          </div>
-            <div>
-            <h3 class="font-2-s cor-0">Realização:</h3>
             <img src="./img/institucional/municipio.svg" alt="Interior">
           </div>
-          <div>
-            <h3 class="font-2-s cor-0">Realização:</h3>
-            <img src="./img/institucional/olhares.svg" alt="Interior">
+          <div class="col-realização">
+            <h3 class="font-2-s cor-0">Realização:</h3>  
+            <div>
+              <img src="./img/institucional/governo.svg" alt="Interior">
+              <img src="./img/institucional/olhares.svg" alt="Interior">
+            </div>
           </div>
         </div>
       </div>

@@ -24,22 +24,32 @@
   border-radius: 4px;
 }
 
-.logos-col img {
-  width: 100%;
-  height: auto;
-  /* border: solid green 4px; */
-}
-
 .logos-col { 
-  padding-top: 32px;
-  display: flex;
-  justify-content: space-between;
-  gap: 32px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 4px;
+  max-width: 100%; /* Limita a largura total */
+  padding: 16px 0;
 }
 
-.logos-col div {
-  max-width: 200px;
-  /* border: sandybrown solid 4px; */
+.col-apoio,
+.col-realização {
+  display: flex;
+  align-items: center;
+  gap: 16px; /* Espaço entre o texto e a imagem */
+}
+
+.col-realização img {
+  max-width: 100%; /* Garante que a imagem não ultrapasse os limites do contêiner */
+  width: 280px;
+  height: auto; /* Mantém a proporção da imagem */
+  object-fit: contain; /* Ajusta a imagem ao contêiner sem cortar */
+}
+
+.col-realização div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
 }
 
 .footer h3 {
@@ -68,6 +78,14 @@
   margin-top: 24px;
 }
 
+@media (max-width: 900px) {
+  .logos-col { 
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 24px;
+   }
+}
+
 @media (max-width: 800px) {
   .footer > img {
     display: none;
@@ -83,15 +101,15 @@
     gap: 32px;
   }
 
-  .logos-col { 
-    padding-top: 0px;
+  .col-apoio,
+  .col-realização {
     display: flex;
-    width: 100%;
-    gap: 32px;
     flex-direction: column;
+    align-items: flex-start;
+    gap: 8px; /* Espaço entre o texto e a imagem */
   }
 
-  .logos-col div {
-    max-width: 150px;
+  .col-realização div {
+    gap: 24px;
   }
 }

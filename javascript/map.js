@@ -57,3 +57,24 @@ document.getElementById('modal-fechar').addEventListener('click', function() {
   document.getElementById('fade').classList.add('hide');
   document.getElementById('modal').classList.add('hide');
 });
+
+document.querySelectorAll('a[href^="#"]').forEach((link) => {
+  link.addEventListener("click", function (event) {
+    event.preventDefault();
+
+    const targetId = this.getAttribute("href");
+    const targetElement = document.querySelector(targetId);
+
+    if (targetElement) {
+      // Calcula a posição da seção ajustada por um offset
+      const offset = 80; // Ajuste de 80px, por exemplo
+      const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - offset;
+
+      // Rola suavemente para a posição ajustada
+      window.scrollTo({
+        top: targetPosition,
+        behavior: "smooth",
+      });
+    }
+  });
+});
