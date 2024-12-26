@@ -20,13 +20,6 @@
   }
 }
 
-.frame-youtube-doc iframe {
-  @media (max-width: 420px) {
-    width: 260px;
-    height: 215px;
-  }
-}
-
 
 .documentario-bg {
   /* background: linear-gradient(to right, var(--cor-0) 30%, var(--cor-11) 0%); */

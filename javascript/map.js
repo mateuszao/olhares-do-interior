@@ -11,9 +11,19 @@ const map = L.map('map', {
   gestureHandling: true
 });
 
-L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+// L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+//   maxZoom: 80,
+//   attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+//   dragging: !L.Browser.mobile,
+//   tap: !L.Browser.mobile
+// }).addTo(map);
+
+const apiKey = '423wSiRgSu5yEsCXSotk';
+
+L.tileLayer(`https://api.maptiler.com/maps/openstreetmap/256/{z}/{x}/{y}.jpg?key=${apiKey}`, {
+  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://www.maptiler.com/copyright/">MapTiler</a>',
   maxZoom: 80,
-  attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+  style: "e12ebc5d-52cf-4110-9c2f-6169c62fcbb5", //optional
   dragging: !L.Browser.mobile,
   tap: !L.Browser.mobile
 }).addTo(map);
