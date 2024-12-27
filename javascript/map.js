@@ -6,6 +6,7 @@ const map = L.map('map', {
 
 const apiKey = '423wSiRgSu5yEsCXSotk';
 
+//L.tileLayer(`https://api.maptiler.com/maps/openstreetmap/256/{z}/{x}/{y}.jpg?key=${apiKey}`, {
 L.tileLayer(`https://api.maptiler.com/maps/openstreetmap/256/{z}/{x}/{y}.jpg?key=${apiKey}`, {
   attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://www.maptiler.com/copyright/">MapTiler</a>',
   maxZoom: 80,
