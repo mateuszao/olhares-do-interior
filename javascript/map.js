@@ -20,8 +20,8 @@ fetch('https://mateuszao.github.io/olhares-do-interior/historias.json')
   .then(response => response.json())
   .then(dados => {
     dados.forEach(item => {
-      // Gera um número aleatório entre 1 e 17
-      const numeroAleatorio = Math.floor(Math.random() * 17) + 1;
+      // Gera um número aleatório entre 1 e 16
+      const numeroAleatorio = Math.floor(Math.random() * 16) + 1;
 
       // Cria o ícone com o número aleatório
       const meuIcone = L.icon({
