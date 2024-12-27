@@ -111,8 +111,8 @@
 @media (max-width: 800px) {
   .hamburger {
     display: flex;
-    margin-left: auto
-  } 
+    margin-left: auto;
+  }
 
   .header-menu {
     position: fixed;
@@ -121,13 +121,14 @@
     width: 100vw;
     height: 100vh;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+    justify-content: flex-start; /* Alinha os itens ao topo */
+    align-items: flex-start; /* Alinha os itens à esquerda */
+    gap: 0; /* Remove o espaçamento vertical entre os itens */
     background-color: var(--cor-12);
     transform: translateY(-100%);
     transition: transform 0.3s ease-in-out;
     z-index: 999;
+    padding: 20px; /* Adiciona um espaçamento interno */
   }
 
   .nav-active .header-menu {
@@ -135,29 +136,33 @@
   }
 
   .header-menu a {
-    font-size: 18px;
+    display: block; /* Garante que os links ocupem toda a linha */
+    font-size: 20px;
     color: var(--cor-0);
     text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    background-color: var(--cor-11);
+    padding: 0 20px;
+    height: 48px; /* Define a altura dos botões */
+    line-height: 48px; /* Centraliza o texto verticalmente */
+    border-radius: 0; /* Remove bordas arredondadas */
+    width: 100%; /* Ocupa toda a largura da tela */
+    border: none; /* Remove bordas desnecessárias */
+    text-align: left; /* Alinha o texto à esquerda */
   }
 
   .header-menu a:hover {
     background-color: var(--cor-10);
   }
-  
-  .header-menu a:hover:after {
-    width: 60%;
-  }
 }
 
 @media (max-width: 600px) {
   .header-menu {
-    gap: 12px;
+    gap: 0; /* Remove o espaçamento entre os itens */
+    padding: 16px; /* Ajusta o espaçamento interno para telas menores */
   }
+
   .header-menu a {
-    padding: 8px 12px;
-    font-size: 14px;
+    padding: 0 16px; /* Ajusta o espaçamento interno */
+    height: 48px; /* Mantém a altura definida */
+    line-height: 48px; /* Centraliza o texto */
   }
 }
