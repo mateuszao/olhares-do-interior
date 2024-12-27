@@ -45,7 +45,7 @@
 /* Media queries para diferentes alturas de tela */
 @media (max-height: 700px) {
   .introducao {
-    height: 90vh;
+    height: 80vh;
   }
 
   .introducao img {

@@ -39,6 +39,10 @@
   gap: 16px; /* Espaço entre o texto e a imagem */
 }
 
+.col-apoio img {
+  width: 200px;
+}
+
 .col-realização img {
   max-width: 100%; /* Garante que a imagem não ultrapasse os limites do contêiner */
   width: 280px;
