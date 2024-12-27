@@ -131,6 +131,10 @@
     padding: 20px; /* Adiciona um espaçamento interno */
   }
 
+  .primeiro-menu {
+    margin-top: 58px;
+  }
+
   .nav-active .header-menu {
     transform: translateY(0);
   }
