@@ -60,7 +60,7 @@
         "mensagem": "O esquinão é uma praça que serve para encontros festivos na época de carnaval, e aos domingos quando a cidade está mais parada, com menos comércios em funcionamento, é também um ponto de encontro de grupos de variadas idades, gostos e estilos.",
         "latitude": -22.411273876172032,
         "longitude": -44.260632531869945,
-        "imagemUrl": "https://cdn6.campograndenews.com.br/uploads/noticias/2022/03/27/39e1sqcbo8e88.jpeg"
+        "imagemUrl": "https://mateuszao.github.io/olhares-do-interior/img/doc/relatos/Feira-doc-0008.png"
     },
     {
         "titulo": "PRAÇA DO QUATIZÃO",
@@ -73,12 +73,20 @@
     },
     {
         "titulo": "FEIRA DA ROÇA",
-        "nomeUsuario": "Praça Teixeira Brandão",
+        "nomeUsuario": "Feira da Roça",
         "endereco": "R. Carlos Haasis - Jardim Polastri, Quatis - RJ",
         "mensagem": "Criada pelas irmãs Terezinha e Elizabeth Alves com o intuito de gerar renda para o município, hoje é Patrimônio Cultural Imaterial do Estado do Rio de Janeiro, trazendo produtores até de estados vizinhos para oferecer seus produtos, acontecendo duas vezes ao mês que é no segundo e quarto domingo, (acontecendo também nos distritos).",
         "latitude": -22.41107429797948,
         "longitude": -44.26310936824321,
         "imagemUrl": "https://mateuszao.github.io/olhares-do-interior/img/doc/relatos/Feira-doc-0006.png"
+    },
+    {
+        "titulo": "O SÃO BENEDITO SÓ CRIA SANTO",
+        "nomeUsuario": "Mateus Araujo",
+        "endereco": "São Benedito, Quatis - RJ",
+        "mensagem": "Tem uma história que minha avó sempre contava:\ndizia que as crianças do São Benedito eram todas santas.\nFalava isso pra me convencer a ir à catequese.\nEu só ia pra bagunçar e questionar.\n\nAcho que era isso que os santos faziam, afinal.\nHoje, já adulto, fico pensando que ela tinha razão.\nAqui, nesse bairro humilde,\nas crianças brincavam na rua,\nsubiam em árvores,\ncorriam até cansar.\nTodo mundo se conhecia.\n\nA felicidade mora nesses encontros.\nNas ruas.\nNa esperança de cada morador,\nque insiste em ver a vida com amor e afeto.\n\nUm beijo, vovó Vera.\nSeguimos sendo santos aqui.",
+        "latitude": -22.406486055143166,
+        "longitude": -44.25804249814998,
+        "imagemUrl": "https://mateuszao.github.io/olhares-do-interior/img/doc/relatos/mat-0007.png"
     }
-    ]
- 
+]
